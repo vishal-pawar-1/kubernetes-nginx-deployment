@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Nginx Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #009639;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #009639;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #007a2f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 Welcome to Nginx</h1>
+    <p>This website is running successfully inside an Nginx container.</p>
+    <button onclick="showMessage()">Click Me</button>
+</div>
+
+<script>
+function showMessage() {
+    alert("Nginx is working successfully! 🎉");
+}
+</script>
+
+</body>
+</html>
