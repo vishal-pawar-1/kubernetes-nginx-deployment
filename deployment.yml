@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: nginx-deployment
+  namespace: test-ns
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: nginx
+
+  template:
+    metadata:
+      labels:
+        app: nginx
+
+    spec:
+      containers:
+      - name: nginx
+        image: vishalpawar2672/nginxweb:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
